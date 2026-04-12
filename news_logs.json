@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-12T17:21:02.530928Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi. 1 eski haber arşive taşındı (public/archive/news_archive_20260412_172102.json).",
+    "details": [
+      "Fiscal Strain Intensifies as Israel Reports 11.5 Billion Dollar Cost for Conflict with Iran"
+    ]
+  },
+  {
     "timestamp": "2026-04-12T17:12:09.517356Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi. 1 eski haber arşive taşındı (public/archive/news_archive_20260412_171209.json).",
