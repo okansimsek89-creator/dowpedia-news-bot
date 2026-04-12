@@ -1,10 +1,7 @@
 name: Auto News Fetcher
 
 on:
-  schedule:
-    # Günde 4 kez (6 saatte bir) çalışır (Örn: 00:00, 06:00, 12:00, 18:00 UTC)
-    - cron: '0 0,6,12,18 * * *'
-  workflow_dispatch: # Manuel tetikleme için
+  workflow_dispatch: # Manuel tetikleme için (Zamanlayıcı kullanıcı tarafından iptal edildi)
     inputs:
       SINGLE_HEADLINE:
         description: 'İşlenecek tekil haber başlığı'
