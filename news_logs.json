@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-13T13:47:23.687491Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "Energy Pressures and Banking Results Weigh on Market Sentiment Amid Diplomatic Stalemate"
+    ]
+  },
+  {
     "timestamp": "2026-04-13T13:41:52.580538Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
