@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-13T13:36:26.997284Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-13T13:36:26.996941Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "Wall St set for subdued open as failed US-Iran peace talks fuel investor angst - Reuters"
+    ]
+  },
+  {
     "timestamp": "2026-04-13T07:25:40.201593Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
