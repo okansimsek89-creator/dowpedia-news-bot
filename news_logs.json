@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-14T11:08:07.431441Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "European Carriers Seek Urgent EU Intervention as Regional Conflict Constraints Global Jet Fuel Supplies"
+    ]
+  },
+  {
     "timestamp": "2026-04-14T05:52:27.097561Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
