@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-14T05:48:38.812382Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "Diplomatic Overtures in Middle East Spark Global Market Rally as Oil and Dollar Retreat"
+    ]
+  },
+  {
     "timestamp": "2026-04-14T05:45:59.008848Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
