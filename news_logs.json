@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-14T05:52:27.097561Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-14T05:52:27.097149Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "US begins Iran port blockade, oil prices ease on hopes for dialogue - Reuters"
+    ]
+  },
+  {
     "timestamp": "2026-04-14T05:50:33.877878Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
