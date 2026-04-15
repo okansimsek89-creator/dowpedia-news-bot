@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-15T07:24:50.992158Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-15T07:24:50.991682Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "Iran used Chinese spy satellite to target US bases, FT reports - Reuters"
+    ]
+  },
+  {
     "timestamp": "2026-04-15T07:23:00.474471Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
