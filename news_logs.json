@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-15T11:36:34.633289Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "Walmart Overhauls Great Value Brand in Strategic Move to Bolster Private Label Dominance"
+    ]
+  },
+  {
     "timestamp": "2026-04-15T07:24:50.992158Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
