@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-20T04:02:27.329770Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-20T04:02:27.329102Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "Oil jumps, stocks wobble as Mideast ceasefire hangs in the balance - Reuters"
+    ]
+  },
+  {
     "timestamp": "2026-04-17T06:54:02.381474Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
