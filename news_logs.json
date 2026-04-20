@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-20T04:10:16.791380Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-20T04:10:16.790676Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "Gold falls on stronger dollar amid renewed US-Iran tensions - Reuters"
+    ]
+  },
+  {
     "timestamp": "2026-04-20T04:07:43.460765Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
