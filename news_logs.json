@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-20T04:12:38.415840Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "Logistics Equity at a Crossroads: The Amazon-USPS Shift and the Rural Delivery Divide"
+    ]
+  },
+  {
     "timestamp": "2026-04-20T04:10:16.791380Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
