@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-20T04:07:43.460765Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "US Seizure of Iranian Cargo Vessel Escalates Geopolitical Risks in Global Energy Markets"
+    ]
+  },
+  {
     "timestamp": "2026-04-20T04:02:27.329770Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
