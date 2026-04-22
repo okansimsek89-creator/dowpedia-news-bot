@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-22T07:12:48.023896Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi. 1 eski haber arşive taşındı (public/archive/news_archive_20260422_071248.json).",
+    "details": [
+      "Polymarket Pivot to Perpetual Futures Signals Strategic Shift into Leveraged Derivatives"
+    ]
+  },
+  {
     "timestamp": "2026-04-22T07:09:02.595300Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
