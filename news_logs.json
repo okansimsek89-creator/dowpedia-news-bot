@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-22T07:01:26.925153Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-22T07:01:26.924393Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "Gold rises as oil weakens after US extends ceasefire with Iran - Reuters"
+    ]
+  },
+  {
     "timestamp": "2026-04-20T04:12:38.415840Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
