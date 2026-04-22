@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-22T07:04:12.473689Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-22T07:04:12.472872Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "Trump declares Iran ceasefire extension with peace talks in doubt - Reuters"
+    ]
+  },
+  {
     "timestamp": "2026-04-22T07:01:26.925153Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
