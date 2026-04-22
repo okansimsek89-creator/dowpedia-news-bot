@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-22T07:09:02.595300Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "Energy Markets Gird for Iranian Supply Shock Amid Shift in Global Crude Dynamics"
+    ]
+  },
+  {
     "timestamp": "2026-04-22T07:04:12.473689Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
