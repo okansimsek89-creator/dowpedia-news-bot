@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "2026-04-27T20:40:21.003336Z",
+    "status": "Warning",
+    "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
+    "details": []
+  },
+  {
+    "timestamp": "2026-04-27T20:40:20.993963Z",
+    "status": "Warning",
+    "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
+    "details": [
+      "Microsoft earnings: What Wall Street is watching around AI, capex"
+    ]
+  },
+  {
     "timestamp": "2026-04-27T20:25:04.285130Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
@@ -359,22 +373,6 @@
     "message": "1 yeni haber başarıyla eklendi.",
     "details": [
       "Escalating Tensions in the Strait of Hormuz Threaten Global Energy Security and Market Stability"
-    ]
-  },
-  {
-    "timestamp": "2026-04-12T17:21:02.530928Z",
-    "status": "Success",
-    "message": "1 yeni haber başarıyla eklendi. 1 eski haber arşive taşındı (public/archive/news_archive_20260412_172102.json).",
-    "details": [
-      "Fiscal Strain Intensifies as Israel Reports 11.5 Billion Dollar Cost for Conflict with Iran"
-    ]
-  },
-  {
-    "timestamp": "2026-04-12T17:12:09.517356Z",
-    "status": "Success",
-    "message": "1 yeni haber başarıyla eklendi. 1 eski haber arşive taşındı (public/archive/news_archive_20260412_171209.json).",
-    "details": [
-      "Wall Street Faces Dual Test as Earnings Season Collides with Geopolitical Volatility"
     ]
   }
 ]
