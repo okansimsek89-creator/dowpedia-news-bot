@@ -323,6 +323,7 @@ def main():
                     "id": str(int(time.time() * 1000)) + str(processed_count),
                     "timestamp": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z",
                     "ticker": ticker,
+                    "image": item.get('image', ''),
                     "en": article.get("en", {}),
                     "zh": article.get("zh", {})
                 }
