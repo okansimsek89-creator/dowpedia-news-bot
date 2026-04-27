@@ -28,6 +28,20 @@ DOW_SYMBOLS = [
     "GS", "NKE", "TRV", "CAT", "CRM", "AMGN", "HON", "MMM", "DOW", "WBA"
 ]
 
+# Nasdaq 100 Sembolleri
+NASDAQ_100_SYMBOLS = [
+    "AAPL", "MSFT", "AMZN", "NVDA", "META", "AVGO", "TSLA", "GOOGL", "GOOG", "COST", 
+    "PEP", "CSCO", "NFLX", "AMD", "TMUS", "CMCSA", "ADBE", "INTC", "QCOM", "TXN",
+    "HON", "AMAT", "AMGN", "SBUX", "ISRG", "MDLZ", "GILD", "LRCX", "ADI", "BKNG",
+    "VRTX", "REGN", "PANW", "ADP", "SNPS", "KLAC", "CDNS", "MELI", "CSX", "MU",
+    "MAR", "PYPL", "CTAS", "ORLY", "ASML", "MNST", "WDAY", "FTNT", "LULU", "NXPI",
+    "ABNB", "PCAR", "ROST", "KDP", "PAYX", "MCHP", "KHC", "EXC", "AEP", "CPRT",
+    "ODFL", "CTSH", "EA", "FAST", "VRSK", "IDXX", "BIIB", "CEG", "CSGP", "DXCM",
+    "ON", "DDOG", "TEAM", "CRWD", "BKR", "GFS", "ZS", "TTD", "WBD", "SPLK",
+    "FANG", "MRVL", "WBA", "ILMN", "SIRI", "DLTR", "EBAY", "SGEN", "ALGN", "ZM",
+    "LCID", "ENPH", "JD", "BIDU", "NTES", "PDD", "MRNA", "RIVN", "WST", "BMRN"
+]
+
 # Kaydedilecek dosya yolu
 DATA_FILE = "public/haberler.json"
 LOG_FILE = "news_logs.json"
@@ -76,41 +90,63 @@ def save_log(status, message, details=None):
     except Exception as e:
         print(f"Log yazma hatası: {e}")
 
+import random
+from datetime import timedelta
+
 def get_market_news():
-    """Finnhub'dan piyasa haberlerini çeker."""
-    url = f"https://finnhub.io/api/v1/news?category=general&token={FINNHUB_API_KEY}"
-    try:
-        response = requests.get(url, timeout=15)
-        response.raise_for_status()
-        return response.json()
-    except Exception as e:
-        print(f"Finnhub hatası: {e}")
-        return []
+    """Finnhub'dan Dow Jones ve Nasdaq 100 şirketlerinin haberlerini çeker."""
+    all_symbols = list(set(DOW_SYMBOLS + NASDAQ_100_SYMBOLS))
+    
+    # API rate limit (60/min) aşmamak ve çeşitli haberler almak için her çalışmada 20 rastgele şirket seçelim
+    sampled_symbols = random.sample(all_symbols, 20)
+    
+    today = datetime.utcnow().strftime('%Y-%m-%d')
+    yesterday = (datetime.utcnow() - timedelta(days=2)).strftime('%Y-%m-%d')
+    
+    all_news = []
+    print(f"Haber aranacak şirketler: {', '.join(sampled_symbols)}")
+    for symbol in sampled_symbols:
+        url = f"https://finnhub.io/api/v1/company-news?symbol={symbol}&from={yesterday}&to={today}&token={FINNHUB_API_KEY}"
+        try:
+            response = requests.get(url, timeout=10)
+            if response.status_code == 200:
+                news_list = response.json()
+                if isinstance(news_list, list):
+                    # Haberin hangi şirkete ait olduğunu tutalım
+                    for n in news_list:
+                        n['related_ticker'] = symbol
+                    all_news.extend(news_list)
+            time.sleep(0.5)  # Rate limit koruması
+        except Exception as e:
+            print(f"Finnhub hatası ({symbol}): {e}")
+            
+    return all_news
 
 def get_priority_score(item):
-    """Belli başlı anahtar kelimelere göre haberin önem puanını hesaplar."""
+    """Belli başlı anahtar kelimelere göre şirket haberinin önem puanını hesaplar."""
     headline = item.get('headline', '').lower()
     summary = item.get('summary', '').lower()
     text = headline + " " + summary
     
     score = 0
-    # Öncelik 1: Trump (10 puan)
-    if "trump" in text:
+    # Öncelik 1: Kazanç Raporları ve Finansallar (10 puan)
+    earnings = ["earnings", "revenue", "profit", "q1", "q2", "q3", "q4", "guidance", "bilanço", "gelir"]
+    if any(e in text for e in earnings):
         score += 10
         
-    # Öncelik 2: Fed ve Merkez Bankaları (8 puan)
-    central_banks = ["fed", "federal reserve", "ecb", "european central bank", "bank of japan", "boj", "pboc", "rbi", "central bank", "merkez bankası"]
-    if any(cb in text for cb in central_banks):
+    # Öncelik 2: Şirket Birleşmeleri ve Satın Alımlar (8 puan)
+    ma = ["merger", "acquisition", "buyout", "spinoff", "satın alma", "birleşme"]
+    if any(m in text for m in ma):
         score += 8
         
-    # Öncelik 3: Avrupa Haberleri (6 puan)
-    europe = ["europe", "european", "eu ", "eurozone", "avrupa"]
-    if any(e in text for e in europe):
+    # Öncelik 3: Analist Notları ve Hedef Fiyatlar (6 puan)
+    analyst = ["upgrade", "downgrade", "target price", "rating", "analyst"]
+    if any(a in text for a in analyst):
         score += 6
         
-    # Öncelik 4: Petrol ve Enerji (5 puan)
-    energy = ["oil", "crude", "petroleum", "energy market", "petrol"]
-    if any(en in text for en in energy):
+    # Öncelik 4: Yasal Durumlar ve Üst Düzey Yönetim Değişiklikleri (5 puan)
+    legal_exec = ["lawsuit", "sues", "sec", "ceo", "resigns", "steps down"]
+    if any(le in text for le in legal_exec):
         score += 5
         
     return score
@@ -276,9 +312,12 @@ def main():
             article = generate_article(item)
             
             if article:
-                ticker = "DIA"
-                for s in DOW_SYMBOLS:
-                    if s in headline: ticker = s; break
+                ticker = item.get('related_ticker', 'DIA')
+                # Eğer haber API'den spesifik ticker ile gelmediyse başlık içinde ara
+                if ticker == 'DIA':
+                    all_symbols = list(set(DOW_SYMBOLS + NASDAQ_100_SYMBOLS))
+                    for s in all_symbols:
+                        if s in headline: ticker = s; break
                 
                 new_item = {
                     "id": str(int(time.time() * 1000)) + str(processed_count),
