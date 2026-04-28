@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-28T05:50:05.638420Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "Amazon Post-Earnings Analysis: Digital Retail Dominance and the AWS Margin Paradigm"
+    ]
+  },
+  {
     "timestamp": "2026-04-27T20:40:21.003336Z",
     "status": "Warning",
     "message": "Yeni haber üretilmedi (Kriterlere uygun veya özgün haber bulunamadı).",
@@ -365,14 +373,6 @@
     "message": "1 yeni haber başarıyla eklendi.",
     "details": [
       "Reliance Industries Seeks Regulatory Pathway for Iranian Oil Imports Amid Shifting Energy Alliances"
-    ]
-  },
-  {
-    "timestamp": "2026-04-12T17:34:49.478301Z",
-    "status": "Success",
-    "message": "1 yeni haber başarıyla eklendi.",
-    "details": [
-      "Escalating Tensions in the Strait of Hormuz Threaten Global Energy Security and Market Stability"
     ]
   }
 ]
