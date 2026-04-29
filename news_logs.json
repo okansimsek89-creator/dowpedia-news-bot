@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-04-29T04:58:53.008303Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "A High-Stakes Convergence for Global Markets: Federal Reserve Policy, the Warsh Confirmation, and Big Tech Earnings"
+    ]
+  },
+  {
     "timestamp": "2026-04-28T05:50:05.638420Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
@@ -365,14 +373,6 @@
     "message": "1 yeni haber başarıyla eklendi.",
     "details": [
       "Strait of Hormuz Tensions Escalate as Iran Signals New Red Lines for Naval Activity"
-    ]
-  },
-  {
-    "timestamp": "2026-04-12T18:31:47.366126Z",
-    "status": "Success",
-    "message": "1 yeni haber başarıyla eklendi.",
-    "details": [
-      "Reliance Industries Seeks Regulatory Pathway for Iranian Oil Imports Amid Shifting Energy Alliances"
     ]
   }
 ]
