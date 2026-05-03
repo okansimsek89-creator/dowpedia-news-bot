@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-05-03T20:46:52.713676Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "Apple Valuation Under Scrutiny as Market Weighs Growth Prospects Against Premium Multiples"
+    ]
+  },
+  {
     "timestamp": "2026-04-29T05:01:42.933343Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
@@ -365,14 +373,6 @@
     "message": "1 yeni haber başarıyla eklendi.",
     "details": [
       "Gold Prices Recede as Stalled U.S.-Iran Diplomacy and Persistent Inflationary Pressures Weigh on Sentiment"
-    ]
-  },
-  {
-    "timestamp": "2026-04-13T04:12:13.065242Z",
-    "status": "Success",
-    "message": "1 yeni haber başarıyla eklendi.",
-    "details": [
-      "U.S. Signals Naval Blockade of Iran Following Collapse of Diplomatic Talks"
     ]
   }
 ]
