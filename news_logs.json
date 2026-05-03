@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-05-03T21:29:36.404082Z",
+    "status": "Success",
+    "message": "1 yeni haber başarıyla eklendi.",
+    "details": [
+      "The Silent Ascent of Custom Silicon: Why Amazon is the Unlikely Challenger to the Semiconductor Throne"
+    ]
+  },
+  {
     "timestamp": "2026-05-03T20:46:52.713676Z",
     "status": "Success",
     "message": "1 yeni haber başarıyla eklendi.",
@@ -365,14 +373,6 @@
     "message": "Benzer haber olduğu için haber oluşturulmadı (Anlamsal Benzerlik).",
     "details": [
       "Wall St set for subdued open as failed US-Iran peace talks fuel investor angst - Reuters"
-    ]
-  },
-  {
-    "timestamp": "2026-04-13T07:25:40.201593Z",
-    "status": "Success",
-    "message": "1 yeni haber başarıyla eklendi.",
-    "details": [
-      "Gold Prices Recede as Stalled U.S.-Iran Diplomacy and Persistent Inflationary Pressures Weigh on Sentiment"
     ]
   }
 ]
